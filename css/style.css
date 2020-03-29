@@ -33,6 +33,7 @@ a:focus
 .nav-link:active,
 .nav-link:focus 
 {
+  font-style: italic;
   color: #F3969A;
   outline: none;
   text-decoration: none;
@@ -80,56 +81,6 @@ h6 {
 }
 
 
-/* Prelaoder */
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid black;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
 
 
@@ -206,14 +157,12 @@ h6 {
 
 
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 
 
-/*--------------------------------------------------------------
+
+/*--------------------
 # Sections
---------------------------------------------------------------*/
+-------------*/
 
 /* Sections Header
 --------------------------------*/
@@ -421,6 +370,7 @@ h6 {
 #portfolio {
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.432);
+  overflow: hidden;
 }
 
 #portfolio #portfolio-flters {
@@ -653,8 +603,8 @@ h6 {
 #contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #fff;
-  color: #283d50;
+  background: #ecf5ff;
+  color: #F3969A;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -663,11 +613,11 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid red;
+  border: 1px solid #F3969A;
 }
 
 #contact .social-links a:hover {
-  background: #007bff;
+  background: #F3969A;
   color: #fff;
 }
 
