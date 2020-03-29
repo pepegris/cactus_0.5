@@ -617,7 +617,8 @@ h6 {
 --------------------------------*/
 
 #contact {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.432);
   padding: 60px 0;
   overflow: hidden;
 }
@@ -662,7 +663,7 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #007bff;
+  border: 1px solid red;
 }
 
 #contact .social-links a:hover {
@@ -676,7 +677,7 @@ h6 {
 
 #contact .info i {
   font-size: 32px;
-  color: #9147ff;
+  color: #F3969A;
   float: left;
   line-height: 1;
 }
@@ -688,8 +689,8 @@ h6 {
 }
 
 #contact .form #sendmessage {
-  color: #9147ff;
-  border: 1px solid #9147ff;
+  color: #F3969A;
+  border: 1px solid #F3969A;
   display: none;
   text-align: center;
   padding: 15px;
@@ -711,6 +712,7 @@ h6 {
 #contact .form #errormessage.show,
 #contact .form .show {
   display: block;
+
 }
 
 #contact .form .validation {
